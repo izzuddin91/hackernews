@@ -1,0 +1,18 @@
+<a href="/">HOME</a>
+<div class="container">
+  <h1>Welcome to Hacker News Clone!</h1>
+  <p>Hello, world!</p>
+
+  <table>
+
+<% @post.each do |x| %>
+<a href="/post/<%= x.id %>"><%= x.title %></a><br>
+<% end %>
+
+
+  </table>
+  <a href="/user">Sign up here</a>
+  <a href="/login">Sign in here</a>
+</div>
+
+

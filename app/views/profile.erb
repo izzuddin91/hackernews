@@ -1,0 +1,12 @@
+
+<a href="/">HOME</a>
+<h1>This is your profile page!</h1>
+
+<table>
+<p>Username:<%= @user.username %></p>
+<p>Email:<%= @user.email %></p>
+<p>Password:<%= @user.password %></p>
+<!-- this will return an array -->
+<a href="/posts/new">Create Post</a>
+
+<a href="/logout">Log out</a>

@@ -1,0 +1,24 @@
+<a href="/">HOME</a>
+
+<h1>Here is the post</h1>
+
+<table>
+<p>Title:</p>
+<%= @post.title %></p>
+<p>Post:</p>
+<%= @post.body %></p>
+
+<p>Comments:</p>
+<% @post.comments.each do |x| %>
+<%= x.body %><br>
+<%end %>
+</table>
+<br>
+<a href="/post/comment">Comment for this post</a>
+
+
+
+
+
+
+
